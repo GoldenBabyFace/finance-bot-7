@@ -10,5 +10,19 @@
   },
   "enabledPlugins": {
     "hypergrok@hypergrok": true
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/hooks/exchange_write_gate.py\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
   }
 }
