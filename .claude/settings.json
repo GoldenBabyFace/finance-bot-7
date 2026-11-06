@@ -1,0 +1,14 @@
+{
+  "extraKnownMarketplaces": {
+    "hypergrok": {
+      "source": {
+        "source": "github",
+        "repo": "galleonlabs/hypergrok-trading-desk",
+        "ref": "v1.7.1"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "hypergrok@hypergrok": true
+  }
+}
